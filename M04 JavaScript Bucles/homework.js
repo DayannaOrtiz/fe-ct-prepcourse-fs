@@ -205,6 +205,13 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
+   var str = num.toString();
+   var digitos = str.length;
+   if (digitos === 3){
+      return true;
+   } else {
+      return false;
+   }
    
 }
 
@@ -213,7 +220,16 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+   var i = 0;
+   do {
+      num=num+5;
+      i=i+1;
+   } while (i<8)
+
+   return num;
 }
+
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
